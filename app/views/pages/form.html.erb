@@ -1,0 +1,12 @@
+hello I am a form
+<%= form_tag "/submit_form", method: :post do %>
+  <div>
+    Enter message here: <input type="text" name="myname">
+     <%= text_field_tag :myothername %>
+  </div>
+  <div>
+    <input type="submit" value="I am a submit button">
+  </div>
+<% end %>
+
+
