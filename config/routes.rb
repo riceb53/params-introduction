@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   get '/say_name' => 'pages#query_name'
   get '/guess_number' => 'pages#guessing_game'
   get '/url_segment_parameter/:guess' => 'pages#guessing_game'
+  # this will show the form
   get '/form_params' => 'pages#here_form'
+  # this is where the form is sent
   post '/submit_form' => 'pages#form_goes_here'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
